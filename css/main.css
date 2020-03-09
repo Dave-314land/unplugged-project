@@ -119,13 +119,16 @@ a {
 }
 
 h1 {
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-size: 2em;
+  font-weight: 500;
 }
 
 h2,
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 h3,
@@ -200,6 +203,7 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   justify-content: space-around;
+  text-transform: uppercase;
   width: 60%;
 }
 
@@ -211,8 +215,13 @@ header nav ul {
   width: 100%;
 }
 
+header nav ul li {
+  font-size: 1.125em;
+}
+
 footer {
   flex-direction: column;
+  text-align: center;
 }
 
 footer .content-wrapper {
@@ -248,15 +257,14 @@ footer .copyright {
 /* --------------------- Mobile Styles - Homepage --------------------- */
 
 /* Hero Area */
-
 .hero-area {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-/* Aside */
 
+/* Aside */
 aside {
   display: flex;
   align-items: center;
@@ -264,8 +272,30 @@ aside {
   justify-content: center;
 }
 
-/* Features */
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/* Features */
 .features {
   display: flex;
   flex-flow: row wrap;
@@ -290,10 +320,11 @@ aside {
 
 .features p {
   margin: 0px;
+  text-align: center;
 }
 
-/* Reviews */
 
+/* Reviews */
 .reviews {
   display: flex;
   flex-flow: row wrap;
@@ -440,6 +471,7 @@ aside {
 .clearfix:after {
   clear: both;
 }
+
 
 /* ==========================================================================
   Media Queries for Responsive Design.
