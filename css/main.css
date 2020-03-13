@@ -600,7 +600,8 @@ input[type=button] {
   }
 
   .hero-area h1 {
-    width: 60%;
+    font-size: 3em;
+    width: 80%;
   }
 
   /* Aside */
@@ -737,7 +738,8 @@ footer .social-icons {
   }
 
   .hero-area h1 {
-    width: 40%;
+    font-size: 4em;
+    width: 75%;
   }
 
   /* Aside */
