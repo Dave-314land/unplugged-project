@@ -114,7 +114,7 @@ ol {
 }
 
 a {
-  color: #e2e3ed;
+  color: #fafafa;
   text-decoration: none;
 }
 
@@ -134,7 +134,7 @@ h4 {
 h3,
 h4 {
   color: #fafafa;
-  margin: 20px 0;
+  margin: 5px 0;
 }
 
 h2 {
@@ -291,6 +291,7 @@ footer .copyright {
 
 .hero-area h1 {
   color: #fafafa;
+  width: 90%;
 }
 
 
@@ -374,13 +375,22 @@ input[type=button] {
   justify-content: center;
 }
 
-.reviews h2 {
-  margin-bottom: 40px;
+.reviews div {
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.reveiws h3 {
-  margin: 20px 0;
+.reviews h2 {
+  margin-bottom: 20px;
+}
+
+.reveiws .content-wrapper article div h3 {
+  margin: 0;
   width: 55%;
+}
+
+.reviews p {
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -388,6 +398,7 @@ input[type=button] {
    ========================================================================== */
 
 .mission {
+  background-color: #7c947d;
   display: flex;
   align-items: center;
   flex-flow: row wrap;
@@ -411,12 +422,16 @@ input[type=button] {
 }
 
 .contact-section {
+  background-color: #7c947d;
   display: flex;
   align-items: center;
   flex-flow: row wrap;
   justify-content: center;
 }
 
+.contact-content div {
+  margin-bottom: 30px;
+}
 .contact-content p {
   margin: 0;
 }
@@ -426,6 +441,7 @@ input[type=button] {
    ========================================================================== */
 
 .faq {
+  background-color: #7c947d;
   display: flex;
   align-items: center;
   flex-flow: row wrap;
@@ -441,6 +457,10 @@ input[type=button] {
 
 .faq h2 {
   margin-bottom: 40px;
+}
+
+.faq p {
+  margin: 0;
 }
 
 .faq-content {
@@ -542,8 +562,8 @@ input[type=button] {
 
   /* General styles */
   .content-wrapper {
-    margin: 100px 0;
-    max-width: 640px;
+    margin: 30px 0;
+    max-width: 700px;
   }
 
 
@@ -575,13 +595,15 @@ input[type=button] {
 
 
   /* Hero Area */
-
   .hero-area {
     min-height: 600px;
   }
 
-  /* Aside */
+  .hero-area h1 {
+    width: 60%;
+  }
 
+  /* Aside */
 aside .content-wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -611,14 +633,17 @@ aside .content-wrapper .form {
 
 
  /* Reviews */
+ .reviews .content-wrapper {
+   width: 95%;
+ }
  .reviews article {
    display: flex;
    justify-content: space-between;
  }
 
  .reviews article div {
-   width: 49%;
- }
+  width: 49%;
+}
 
 
  /* Footer */
@@ -657,7 +682,7 @@ footer .social-icons {
       align-items: center;
       flex-flow: row wrap;
       justify-content: space-between;
-      padding-top: 20px
+      padding-top: 0;
     }
 
     .mission-content p {
@@ -712,7 +737,7 @@ footer .social-icons {
   }
 
   .hero-area h1 {
-    width: 60%;
+    width: 40%;
   }
 
   /* Aside */
@@ -770,6 +795,11 @@ footer .social-icons {
   
   .map figure {
     padding-bottom: 40%;
+  }
+
+  .contact-section .content-wrapper .contact-content {
+    justify-content: space-around;
+    width: 90%;
   }
 
   /* ==========================================================================
