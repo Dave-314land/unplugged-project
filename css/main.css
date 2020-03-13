@@ -133,6 +133,7 @@ h4 {
 
 h3,
 h4 {
+  color: #fafafa;
   margin: 20px 0;
 }
 
@@ -149,6 +150,7 @@ h4 {
 }
 
 p {
+  color: #fafafa;
   font-size: 1.125em;
   line-height: 1.4em;
 }
@@ -166,7 +168,7 @@ address {
 }
 
 .content-wrapper {
-  margin: 50px 0;
+  margin: 20px 0;
   width: 90%;
 }
 
@@ -174,6 +176,7 @@ address {
 
 header,
 footer {
+  background-color: #2e2e2e;
   display: flex;
   align-items: center;
   flex-flow: row wrap;
@@ -286,9 +289,14 @@ footer .copyright {
   min-height: 500px;
 }
 
+.hero-area h1 {
+  color: #fafafa;
+}
+
 
 /* Aside */
 aside {
+  background-color: #7c947d;
   display: flex;
   align-items: center;
   flex-flow: row wrap;
@@ -320,6 +328,9 @@ input[type=button] {
 
 /* Features */
 .features {
+  background: url('../img/background-72ppi.jpg') center no-repeat #333;
+  background-size: cover;
+  color: #fafafa;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -356,6 +367,8 @@ input[type=button] {
 
 /* Reviews */
 .reviews {
+  background-color: #455c50;
+  color: #fafafa;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
