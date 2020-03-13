@@ -154,11 +154,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -190,6 +190,14 @@ header .content-wrapper {
   flex-flow: row wrap;
   justify-content: center;
   margin: 0;
+}
+
+header figure {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 60%;
 }
 
 .header-divider {
@@ -244,10 +252,21 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;  
+  height: 40px;
+  justify-content: center;
+  width: 40px;
 }
+
+footer .social-icons p i {
+  display: flex;
+  align-items: center;
+  font-size: 1.25em;
+}
+
 
 footer .copyright {
   margin: 20px 0;
@@ -256,11 +275,15 @@ footer .copyright {
 
 /* --------------------- Mobile Styles - Homepage --------------------- */
 
+
 /* Hero Area */
 .hero-area {
+  background: url('../img/header-72ppi.jpg') center no-repeat #333;
+  background-size: cover;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  min-height: 500px;
 }
 
 
@@ -323,6 +346,13 @@ input[type=button] {
   text-align: center;
 }
 
+.features i {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
 
 /* Reviews */
 .reviews {
@@ -349,6 +379,22 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.map figure {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 80%;
+  position: relative;
+  width: 100%;
+}
+
+.map iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .contact-section {
@@ -498,6 +544,10 @@ input[type=button] {
     width: 100%;
   }
 
+  header figure {
+    width: 33%;
+  }
+
   .header-divider {
     display: none;
   }
@@ -513,6 +563,9 @@ input[type=button] {
 
   /* Hero Area */
 
+  .hero-area {
+    min-height: 600px;
+  }
 
   /* Aside */
 
@@ -571,6 +624,11 @@ aside .content-wrapper .form {
    margin-bottom: 0;
  }
 
+footer .social-icons {
+  justify-content: space-between;
+  width: 12.5em;
+}
+
  footer .copyright {
    display: flex;
    justify-content: center;
@@ -591,6 +649,10 @@ aside .content-wrapper .form {
 
     .mission-content p {
       width: 45%;
+    }
+
+    .map figure {
+      padding-bottom: 50%;
     }
   
     .contact-section .content-wrapper h2 {
@@ -632,6 +694,10 @@ aside .content-wrapper .form {
   
 
   /* Hero Area */
+  .hero-area {
+    min-height: 775px;
+  }
+
   .hero-area h1 {
     width: 60%;
   }
@@ -689,6 +755,10 @@ aside .content-wrapper .form {
     width: 95%;
   }
   
+  .map figure {
+    padding-bottom: 40%;
+  }
+
   /* ==========================================================================
     FAQ Page
     ========================================================================== */
